@@ -18,9 +18,11 @@ to execute the code, just source it (http://stat.ethz.ch/R-manual/R-devel/librar
 
 First, the files are loaded. For the test and train, "subject", "x" and "y" are loaded. Also activity_labels and features.
 Then, I give all the files apropriate column names, either from the features file or with text string.
+
 After that, I cbind the test data. Then the train data.
 Now, I rbind the test and train data.
 Then, by means of grep, I subset the data, so all the columns that contain "mean" or "std" are taken, as well as subject and activity.
+
 I substitute the activity numbers with the activity names provided in the original files.
 I then arrange the columns (just to make it easier to read) and by means of aggregate perform the last subset that gives us the tidy data as specified in the requirements.
 This is the data that is written to the file.
